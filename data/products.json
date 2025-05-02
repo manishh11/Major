@@ -1,0 +1,208 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Mutton Marg",
+      "price": "200.00",
+      "url": "./images/muttonmarg.jpeg",
+      "category": "Non Veg"
+    },
+    {
+      "id": 2,
+      "title": "Mutton Curry ",
+      "price": "380.00",
+      "url": "./images/mutton.jpeg",
+      "category": "Non Veg"
+    },
+    {
+      "id": 3,
+      "title": "Chicken Curry ",
+      "price": "280.00",
+      "url": "./images/Chicken-Curry.jpeg",
+      "category": "Non Veg"
+    },
+    {
+      "id": 4,
+      "title": "Fried rice",
+      "price": "120.00",
+      "url":"./images/fried-rice.jpeg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 5,
+      "title": "Non Veg Thali",
+      "price": "230.00",
+      "url": "./images/non.jpeg",
+      "category": "Thali"
+    },
+    {
+      "id": 6,
+      "title": "Rasmalai",
+      "price": "20.00",
+      "url": "./images/rasmalai2.jpeg",
+      "category": "Deserts"
+    },
+    {
+      "id": 7,
+      "title": "Ice Cream",
+      "price": "65.00",
+      "url": "./images/icecream.png",
+      "category": "Deserts"
+    },
+    {
+      "id": 8,
+      "title": "Butter-Paneer",
+      "price": "120.00",
+      "url": "./images/butter-paneer.jpeg",
+      "category": "Veg"
+    },
+    {
+      "id": 9,
+      "title": "Jeera Rice",
+      "price": "55.00",
+      "url": "./images/jeera-rice.jpeg",
+      "category": "Rice"
+    },
+    {
+      "id": 10,
+      "title": "Rajma Chawal",
+      "price": "60.00",
+      "url": "./images/download.jpeg",
+      "category": "Rice Items"
+    },
+    {
+      "id": 11,
+      "title": "Veg Thali",
+      "price": "80.00",
+      "url": "./images/thali.jpeg",
+      "category": "Thali"
+    },
+    {
+      "id": 12,
+      "title": "Pahadi Thali",
+      "price": "120.00",
+      "url": "./images/pahadi.jpeg",
+      "category": "Thali"
+    },
+    {
+      "id": 13,
+      "title": "Pastry",
+      "price": "45.00",
+      "url": "./images/pastries.jpeg",
+      "category": "Deserts"
+    },
+    {
+      "id": 14,
+      "title": "Mix Veg",
+      "price": "100.00",
+      "url": "./images/mix.jpeg",
+      "category": "Veg"
+    },
+    {
+      "id": 15,
+      "title": "Momo",
+      "price": "50.00",
+      "url": "./images/momo.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 16,
+      "title": "Plain Rice",
+      "price": "40.00",
+      "url": "./images/plain-rice.jpeg",
+      "category": "Rice"
+    },
+    {
+      "id": 17,
+      "title": "Lemon Rice",
+      "price": "50.00",
+      "url": "./images/lemonrice.jpeg",
+      "category": "Rice"
+    },
+    {
+      "id": 18,
+      "title": "Butter Chicken",
+      "price": "180.00",
+      "url": "./images/butterchicken.jpeg",
+      "category": "Non Veg"
+    },
+    {
+      "id": 19,
+      "title": "Paneer 65",
+      "price": "135.00",
+      "url": "./images/paneer65.jpg",
+      "category": "Veg"
+    }, 
+    {
+      "id": 18,
+      "title": "Aaloo Jeera",
+      "price": "80.00",
+      "url": "./images/aalojeera.jpg",
+      "category": "Veg"
+    },
+    {
+      "id": 19,
+      "title": "Veg/Non Veg Burger",
+      "price": "80.00",
+      "url": "./images/burger.jpeg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 20,
+      "title": "Chawmin",
+      "price": "60.00",
+      "url": "./images/chawmin.jpg",
+      "category": "Fast Food"
+    },
+    {
+      "id": 20,
+      "title": "Daal Makhani",
+      "price": "90.00",
+      "url": "./images/daalmakhani.jpeg",
+      "category": "Daal"
+    },
+    {
+      "id": 20,
+      "title": "Daal Fry",
+      "price": "110.00",
+      "url": "./images/daalfry.jpeg",
+      "category": "Daal"
+    },
+    {
+      "id": 20,
+      "title": "Chana Daal",
+      "price": "60.00",
+      "url": "./images/chanadaal.jpeg",
+      "category": "Daal"
+    },
+    {
+      "id": 20,
+      "title": "Rajma Daal",
+      "price": "70.00",
+      "url": "./images/rajma.jpeg",
+      "category": "Daal"
+    },
+    {
+      "id": 21,
+      "title": "Kadi Chawal",
+      "price": "50.00",
+      "url": "./images/kadichawal.jpeg",
+      "category": "Rice Items"
+    },
+    {
+      "id": 21,
+      "title": "Daal Chawal",
+      "price": "40.00",
+      "url": "./images/daalchawal.jpeg",
+      "category": "Rice Items"
+    },
+    {
+      "id": 22,
+      "title": "Gulab Jamun",
+      "price": "30.00",
+      "url": "./images/gulabjamun.jpeg",
+      "category": "Deserts"
+    }
+
+  ]
+}
