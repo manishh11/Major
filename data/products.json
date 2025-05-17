@@ -5,204 +5,305 @@
       "title": "Mutton Marg",
       "price": "200.00",
       "url": "./images/muttonmarg.jpeg",
-      "category": "Non Veg"
+      "category": "Non Veg",
+      "calories": 450,
+      "macros": { "protein": 30, "carbs": 15, "fat": 28 },
+      "meal_type": ["lunch", "dinner"]
     },
     {
       "id": 2,
       "title": "Mutton Curry ",
       "price": "380.00",
       "url": "./images/mutton.jpeg",
-      "category": "Non Veg"
+      "category": "Non Veg",
+      "calories": 550,
+      "macros": { "protein": 35, "carbs": 20, "fat": 35 },
+      "meal_type": ["lunch", "dinner"]
     },
     {
       "id": 3,
       "title": "Chicken Curry ",
       "price": "280.00",
       "url": "./images/Chicken-Curry.jpeg",
-      "category": "Non Veg"
+      "category": "Non Veg",
+      "calories": 480,
+      "macros": { "protein": 32, "carbs": 18, "fat": 28 },
+      "meal_type": ["lunch", "dinner"]
     },
     {
       "id": 4,
       "title": "Fried rice",
       "price": "120.00",
       "url":"./images/fried-rice.jpeg",
-      "category": "Fast Food"
+      "category": "Fast Food",
+      "calories": 350,
+      "macros": { "protein": 8, "carbs": 55, "fat": 10 },
+      "meal_type": ["lunch", "dinner", "side"]
     },
     {
       "id": 5,
       "title": "Non Veg Thali",
       "price": "230.00",
       "url": "./images/non.jpeg",
-      "category": "Thali"
+      "category": "Thali",
+      "calories": 750,
+      "macros": { "protein": 40, "carbs": 70, "fat": 35 },
+      "meal_type": ["lunch", "dinner"]
     },
     {
       "id": 6,
       "title": "Rasmalai",
       "price": "20.00",
       "url": "./images/rasmalai2.jpeg",
-      "category": "Deserts"
+      "category": "Deserts",
+      "calories": 180,
+      "macros": { "protein": 4, "carbs": 25, "fat": 7 },
+      "meal_type": ["snack", "dessert"]
     },
     {
       "id": 7,
       "title": "Ice Cream",
       "price": "65.00",
       "url": "./images/icecream.png",
-      "category": "Deserts"
+      "category": "Deserts",
+      "calories": 250,
+      "macros": { "protein": 5, "carbs": 30, "fat": 12 },
+      "meal_type": ["snack", "dessert"]
     },
     {
       "id": 8,
       "title": "Butter-Paneer",
       "price": "120.00",
       "url": "./images/butter-paneer.jpeg",
-      "category": "Veg"
+      "category": "Veg",
+      "calories": 420,
+      "macros": { "protein": 18, "carbs": 20, "fat": 28 },
+      "meal_type": ["lunch", "dinner"],
+      "diet_tags": ["vegetarian"]
     },
     {
       "id": 9,
       "title": "Jeera Rice",
       "price": "55.00",
       "url": "./images/jeera-rice.jpeg",
-      "category": "Rice"
+      "category": "Rice",
+      "calories": 200,
+      "macros": { "protein": 4, "carbs": 40, "fat": 2 },
+      "meal_type": ["side"]
     },
     {
       "id": 10,
       "title": "Rajma Chawal",
       "price": "60.00",
       "url": "./images/download.jpeg",
-      "category": "Rice Items"
+      "category": "Rice Items",
+      "calories": 400,
+      "macros": { "protein": 15, "carbs": 60, "fat": 8 },
+      "meal_type": ["lunch", "dinner"],
+      "diet_tags": ["vegetarian"]
     },
     {
       "id": 11,
       "title": "Veg Thali",
       "price": "80.00",
       "url": "./images/thali.jpeg",
-      "category": "Thali"
+      "category": "Thali",
+      "calories": 600,
+      "macros": { "protein": 20, "carbs": 80, "fat": 20 },
+      "meal_type": ["lunch", "dinner"],
+      "diet_tags": ["vegetarian"]
     },
     {
       "id": 12,
       "title": "Pahadi Thali",
       "price": "120.00",
       "url": "./images/pahadi.jpeg",
-      "category": "Thali"
+      "category": "Thali",
+      "calories": 650,
+      "macros": { "protein": 25, "carbs": 85, "fat": 22 },
+      "meal_type": ["lunch", "dinner"],
+      "diet_tags": ["vegetarian"]
     },
     {
       "id": 13,
       "title": "Pastry",
       "price": "45.00",
       "url": "./images/pastries.jpeg",
-      "category": "Deserts"
+      "category": "Deserts",
+      "calories": 300,
+      "macros": { "protein": 3, "carbs": 40, "fat": 15 },
+      "meal_type": ["snack", "dessert"]
     },
     {
       "id": 14,
       "title": "Mix Veg",
       "price": "100.00",
       "url": "./images/mix.jpeg",
-      "category": "Veg"
+      "category": "Veg",
+      "calories": 280,
+      "macros": { "protein": 8, "carbs": 30, "fat": 12 },
+      "meal_type": ["lunch", "dinner", "side"],
+      "diet_tags": ["vegetarian"]
     },
     {
       "id": 15,
       "title": "Momo",
       "price": "50.00",
       "url": "./images/momo.jpg",
-      "category": "Fast Food"
+      "category": "Fast Food",
+      "calories": 320,
+      "macros": { "protein": 10, "carbs": 40, "fat": 12 },
+      "meal_type": ["snack", "lunch"]
     },
     {
       "id": 16,
       "title": "Plain Rice",
       "price": "40.00",
       "url": "./images/plain-rice.jpeg",
-      "category": "Rice"
+      "category": "Rice",
+      "calories": 180,
+      "macros": { "protein": 3, "carbs": 38, "fat": 0 },
+      "meal_type": ["side"]
     },
     {
       "id": 17,
       "title": "Lemon Rice",
       "price": "50.00",
       "url": "./images/lemonrice.jpeg",
-      "category": "Rice"
+      "category": "Rice",
+      "calories": 220,
+      "macros": { "protein": 3, "carbs": 45, "fat": 3 },
+      "meal_type": ["side"]
     },
     {
       "id": 18,
       "title": "Butter Chicken",
       "price": "180.00",
       "url": "./images/butterchicken.jpeg",
-      "category": "Non Veg"
+      "category": "Non Veg",
+      "calories": 520,
+      "macros": { "protein": 38, "carbs": 15, "fat": 32 },
+      "meal_type": ["lunch", "dinner"]
     },
     {
       "id": 19,
       "title": "Paneer 65",
       "price": "135.00",
       "url": "./images/paneer65.jpg",
-      "category": "Veg"
-    }, 
+      "category": "Veg",
+      "calories": 380,
+      "macros": { "protein": 20, "carbs": 25, "fat": 22 },
+      "meal_type": ["snack", "side"],
+      "diet_tags": ["vegetarian"]
+    },
     {
-      "id": 18,
+      "id": 20,
       "title": "Aaloo Jeera",
       "price": "80.00",
       "url": "./images/aalojeera.jpg",
-      "category": "Veg"
+      "category": "Veg",
+      "calories": 250,
+      "macros": { "protein": 5, "carbs": 30, "fat": 12 },
+      "meal_type": ["side"],
+      "diet_tags": ["vegetarian"]
     },
     {
-      "id": 19,
+      "id": 21,
       "title": "Veg/Non Veg Burger",
       "price": "80.00",
       "url": "./images/burger.jpeg",
-      "category": "Fast Food"
-    },
-    {
-      "id": 20,
-      "title": "Chawmin",
-      "price": "60.00",
-      "url": "./images/chawmin.jpg",
-      "category": "Fast Food"
-    },
-    {
-      "id": 20,
-      "title": "Daal Makhani",
-      "price": "90.00",
-      "url": "./images/daalmakhani.jpeg",
-      "category": "Daal"
-    },
-    {
-      "id": 20,
-      "title": "Daal Fry",
-      "price": "110.00",
-      "url": "./images/daalfry.jpeg",
-      "category": "Daal"
-    },
-    {
-      "id": 20,
-      "title": "Chana Daal",
-      "price": "60.00",
-      "url": "./images/chanadaal.jpeg",
-      "category": "Daal"
-    },
-    {
-      "id": 20,
-      "title": "Rajma Daal",
-      "price": "70.00",
-      "url": "./images/rajma.jpeg",
-      "category": "Daal"
-    },
-    {
-      "id": 21,
-      "title": "Kadi Chawal",
-      "price": "50.00",
-      "url": "./images/kadichawal.jpeg",
-      "category": "Rice Items"
-    },
-    {
-      "id": 21,
-      "title": "Daal Chawal",
-      "price": "40.00",
-      "url": "./images/daalchawal.jpeg",
-      "category": "Rice Items"
+      "category": "Fast Food",
+      "calories": 450,
+      "macros": { "protein": 20, "carbs": 40, "fat": 20 },
+      "meal_type": ["lunch", "snack"]
     },
     {
       "id": 22,
+      "title": "Chawmin",
+      "price": "60.00",
+      "url": "./images/chawmin.jpg",
+      "category": "Fast Food",
+      "calories": 380,
+      "macros": { "protein": 12, "carbs": 50, "fat": 10 },
+      "meal_type": ["lunch", "snack"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 23,
+      "title": "Daal Makhani",
+      "price": "90.00",
+      "url": "./images/daalmakhani.jpeg",
+      "category": "Daal",
+      "calories": 350,
+      "macros": { "protein": 15, "carbs": 30, "fat": 18 },
+      "meal_type": ["lunch", "dinner", "side"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 24,
+      "title": "Daal Fry",
+      "price": "110.00",
+      "url": "./images/daalfry.jpeg",
+      "category": "Daal",
+      "calories": 300,
+      "macros": { "protein": 12, "carbs": 25, "fat": 15 },
+      "meal_type": ["lunch", "dinner", "side"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 25,
+      "title": "Chana Daal",
+      "price": "60.00",
+      "url": "./images/chanadaal.jpeg",
+      "category": "Daal",
+      "calories": 280,
+      "macros": { "protein": 14, "carbs": 35, "fat": 8 },
+      "meal_type": ["lunch", "dinner", "side"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 26,
+      "title": "Rajma Daal",
+      "price": "70.00",
+      "url": "./images/rajma.jpeg",
+      "category": "Daal",
+      "calories": 320,
+      "macros": { "protein": 16, "carbs": 40, "fat": 9 },
+      "meal_type": ["lunch", "dinner", "side"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 27,
+      "title": "Kadi Chawal",
+      "price": "50.00",
+      "url": "./images/kadichawal.jpeg",
+      "category": "Rice Items",
+      "calories": 420,
+      "macros": { "protein": 10, "carbs": 60, "fat": 15 },
+      "meal_type": ["lunch", "dinner"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 28,
+      "title": "Daal Chawal",
+      "price": "40.00",
+      "url": "./images/daalchawal.jpeg",
+      "category": "Rice Items",
+      "calories": 380,
+      "macros": { "protein": 12, "carbs": 55, "fat": 10 },
+      "meal_type": ["lunch", "dinner"],
+      "diet_tags": ["vegetarian"]
+    },
+    {
+      "id": 29,
       "title": "Gulab Jamun",
       "price": "30.00",
       "url": "./images/gulabjamun.jpeg",
-      "category": "Deserts"
+      "category": "Deserts",
+      "calories": 220,
+      "macros": { "protein": 2, "carbs": 35, "fat": 8 },
+      "meal_type": ["snack", "dessert"],
+      "diet_tags": ["vegetarian"]
     }
-
   ]
 }
