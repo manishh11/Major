@@ -445,6 +445,143 @@ img {
   cursor: pointer;
 }
 
+/* Calorie Calculator Modal Specific Styles */
+#calorie-calculator-modal .form {
+    max-width: 60rem; /* Adjust max-width for calculator */
+}
+
+#calorie-calculator-modal .control label {
+    font-size: 1.6rem; /* Adjust label font size */
+    margin-bottom: 0.5rem;
+}
+
+#calorie-calculator-modal .control input[type="number"],
+#calorie-calculator-modal .control select {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: 1px solid var(--grey-color);
+    border-radius: 0.5rem;
+    width: 100%; /* Make inputs/select full width */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+#calorie-result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid var(--grey-color);
+    border-radius: 5px;
+    background-color: var(--grey-color-1);
+}
+
+#calorie-result p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+#meal-suggestions-container {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--grey-color);
+}
+
+#meal-suggestions-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--black-color);
+}
+
+#meal-suggestions-container ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#meal-suggestions-container li {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    color: var(--default-color);
+}
+
+
+/* Error message styling */
+.error-message {
+    color: var(--primary-color); /* Red color for errors */
+    font-size: 1.4rem;
+    margin-top: 5px;
+    display: none; /* Hidden by default */
+}
+
+.error-message.show {
+    display: block; /* Show when active */
+}
+
+.control.error input,
+.control.error select {
+    border-color: var(--primary-color); /* Red border for error inputs */
+}
+
+.control.success input,
+.control.success select {
+    border-color: green; /* Green border for valid inputs */
+}
+
+/* Styles for product calories, meal types, and diet tags */
+.recipes .products .card .calories {
+    font-size: 1.4rem;
+    color: var(--default-color);
+    margin-bottom: 10px;
+}
+
+.recipes .products .card .meal-types,
+.recipes .products .card .diet-tags {
+    font-size: 1.3rem;
+    color: var(--black-color);
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.recipes .products .card .tag {
+    display: inline-block;
+    background-color: var(--grey-color);
+    color: var(--black-color);
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    margin-top: 3px;
+}
+
+.recipes .products .card .meal-type-tag {
+    background-color: var(--yellow-color-1); /* Example color for meal types */
+}
+
+.recipes .products .card .diet-tag {
+    background-color: var(--light-red-color); /* Example color for diet tags */
+    color: var(--primary-color);
+}
+
+/* Styles for the Add To Cart button */
+.recipes .products .card .add-to-cart {
+  display: inline-block; /* Ensure it's a block or inline-block to apply padding/margin */
+  background-color: var(--primary-color); /* Set background color to red */
+  color: var(--white-color); /* Set text color to white */
+  padding: 1.2rem 1.7rem; /* Existing padding */
+  border-radius: 1rem; /* Existing border-radius */
+  font-size: inherit; /* Inherit font size */
+  cursor: pointer; /* Indicate it's clickable */
+  text-align: center; /* Center the text */
+  transition: background-color 0.2s ease, transform 0.1s ease; /* Add transition for smooth effect */
+}
+
+.recipes .products .card .add-to-cart:hover {
+  background-color: var(--red-color-2); /* Slightly darker red on hover */
+}
+
+.recipes .products .card .add-to-cart:active {
+  background-color: var(--red-color-1); /* Even darker red when clicked */
+  transform: scale(0.98); /* Slightly shrink the button when clicked */
+}
+
+
 /* ========== Services =========== */
 .services {
   padding: 10rem 0 10rem;
@@ -1113,3 +1250,4 @@ img {
 .cart-icon {
   cursor: pointer;
 }
+
