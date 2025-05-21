@@ -4,33 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--=============== Favicon ===============-->
-    <link
-      rel="shortcut icon"
-      href="./images/favicon-32x32.png"
-      type="image/png"
-    />
-    <!--=============== Swiper CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!--=============== Boxicons ===============-->
-    <link
-      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!--=============== Custom StyleSheet ===============-->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/png" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="./css/styles.css" />
     <title>FDelivery</title>
   </head>
-  <body >
-    <!--=============== Header ===============-->
+  <body>
     <header class="header">
       <nav class="navbar">
         <div class="row d-flex container">
           <a href="" class="logo d-flex">
-            <img src="./images/logo.png" alt="" />
+            <img src="./images/logo.png" alt="FDelivery Logo" />
           </a>
 
           <ul class="nav-list d-flex">
@@ -45,30 +33,40 @@
 
           <div class="col d-flex">
             <form>
-              <input type="search" placeholder="Search your item" />
-              <button class="d-flex"><i class="bx bx-search"></i></button>
+              <input type="search" placeholder="Search your item" aria-label="Search items" />
+              <button type="submit" class="d-flex"><i class="bx bx-search"></i></button>
             </form>
             <div class="cart-icon d-flex">
               <i class="bx bx-shopping-bag"></i>
               <span>0</span>
             </div>
-            <a class="btn signin">Sign In</a>
+
+            <div class="cart-dropdown">
+              <h3>Your Shopping Cart</h3>
+              <div class="cart-items-container">
+                <p class="empty-cart-message">Your cart is empty.</p>
+              </div>
+              <div class="cart-summary">
+                <p>Total: <span class="cart-total-price">Rs. 0</span></p>
+                <button class="btn checkout-btn">Proceed to Checkout</button>
+              </div>
+            </div>
+            <a class="btn signin" href="#">Sign In</a>
           </div>
 
-          <!-- Hamburger -->
           <div class="hamburger d-flex">
             <i class="bx bx-menu"></i>
           </div>
         </div>
       </nav>
-      <!--=============== Home ===============-->
+
       <div class="home">
         <div class="row container">
           <div class="col">
             <div class="faster">
               More than Faster
               <div class="image d-flex">
-                <img src="./images/french-fries.svg" alt="" />
+                <img src="./images/french-fries.svg" alt="French Fries icon" />
               </div>
             </div>
             <h1>
@@ -80,35 +78,34 @@
               Food that is delivered at the right time. The trendy food delivery
               partner. Good food is what we deliver. Your hunger companion.
             </p>
-            <a href="" class="btn">Explore Food</a>
+            <a href="#" class="btn">Explore Food</a>
           </div>
           <div class="col">
-            <img src="./images/delivery-guy.svg" alt="" />
+            <img src="./images/delivery-guy.svg" alt="Delivery Guy illustration" />
           </div>
         </div>
       </div>
 
-      <!--=============== SignIn Form ===============-->
       <div class="wrapper">
-        <form action="" class="form">
+        <form action="#" class="form" id="signInForm">
           <h2>SIGN IN</h2>
 
           <div class="control">
-            <label for="">Enter Email:</label>
-            <input type="email" placeholder="Enter Your Email" />
+            <label for="signInEmail">Enter Email:</label>
+            <input type="email" id="signInEmail" placeholder="Enter Your Email" required />
           </div>
           <div class="control">
-            <label for="">Password:</label>
-            <input type="password" placeholder="Password" />
+            <label for="signInPassword">Password:</label>
+            <input type="password" id="signInPassword" placeholder="Password" required minlength="6" />
           </div>
           <div class="checkbox d-flex">
-            <input type="checkbox" />
-            <span>Remember Me</span>
+            <input type="checkbox" id="rememberMe" />
+            <label for="rememberMe">Remember Me</label>
           </div>
-          <button class="btn">Sign In</button>
+          <button type="submit" class="btn">Sign In</button>
           <div class="links">
-            <span>Forgot Password? <a href="">Click Here</a></span>
-            <span>Don't Have An Account? <a href="">Create One</a></span>
+            <span>Forgot Password? <a href="#">Click Here</a></span>
+            <span>Don't Have An Account? <a href="#">Create One</a></span>
           </div>
         </form>
 
@@ -118,19 +115,18 @@
       </div>
     </header>
 
-    <!--=============== Services ===============-->
     <section class="section services" id="services">
       <div class="row container">
         <div class="col">
           <h2>Why we are Best in our Town</h2>
           <p>
-            whole grains and low-fat dairy can help to reduce your risk of heart
+            Whole grains and low-fat dairy can help to reduce your risk of heart
             disease by maintaining blood pressure and
           </p>
         </div>
         <div class="col">
           <div class="card">
-            <img src="./images/meat-icon.svg" alt="" />
+            <img src="./images/meat-icon.svg" alt="Meat icon" />
             <h3>
               Choose <br />
               your favorite <br />
@@ -140,7 +136,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="./images/delivery-icon.svg" alt="" />
+            <img src="./images/delivery-icon.svg" alt="Delivery icon" />
             <h3>
               Get delivery <br />
               at your door <br />
@@ -150,7 +146,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="./images/phone-icon.svg" alt="" />
+            <img src="./images/phone-icon.svg" alt="Phone icon" />
             <h3>
               We have <br />
               400+ Review <br />
@@ -161,11 +157,10 @@
       </div>
     </section>
 
-    <!--=============== About ===============-->
     <section class="section about" id="about">
       <div class="row container">
         <div class="col">
-          <img src="./images/delivery-guy-2.svg" alt="" />
+          <img src="./images/delivery-guy-2.svg" alt="Delivery Guy illustration 2" />
         </div>
         <div class="col">
           <h2>Take a look at the benefits we offer for you</h2>
@@ -175,31 +170,30 @@
           </p>
           <div class="d-grid">
             <div class="card">
-              <img src="./images/car-icon.svg" alt="" />
-              <h4>Free Home Delivary</h4>
+              <img src="./images/car-icon.svg" alt="Car icon" />
+              <h4>Free Home Delivery</h4>
               <span>For all orders over Rs:50</span>
             </div>
             <div class="card">
-              <img src="./images/dollar-icon.svg" alt="" />
+              <img src="./images/dollar-icon.svg" alt="Dollar icon" />
               <h4>Return & Refund</h4>
               <span>Money Back Guarantee</span>
             </div>
             <div class="card">
-              <img src="./images/security-icon.svg" alt="" />
+              <img src="./images/security-icon.svg" alt="Security icon" />
               <h4>Secure Payment</h4>
               <span>100% Secure Payment</span>
             </div>
             <div class="card">
-              <img src="./images/time-icon.svg" alt="" />
+              <img src="./images/time-icon.svg" alt="Time icon" />
               <h4>Quality Support</h4>
-              <span>Alway Online 24/7</span>
+              <span>Always Online 24/7</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--=============== Recipes ===============-->
     <section class="section recipes" id="recipes">
       <h2>Try Our Special Recipes</h2>
       <div class="row container">
@@ -216,25 +210,7 @@
         </div>
         <div class="products">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper" id="products-wrapper">
-              <!-- <div class="swiper-slide">
-                <div class="card">
-                  <div class="image"><img src="./images/meat-2.svg" alt=""></div>
-                  <div class="rating">
-                  <span><i class="bx bxs-star"></i></span>
-                  <span><i class="bx bxs-star"></i></span>
-                  <span><i class="bx bxs-star"></i></span>
-                  <span><i class="bx bxs-star"></i></span>
-                  <span><i class="bx bxs-star"></i></span>
-                  </div>
-                  <h4>Crispy Fried Chicken</h4>
-                  <div class="price">
-                    <span>Price</span><span class="color">13.00</span>
-                  </div>
-                  <div class="button">Add To Cart+</div>
-                </div>
-              </div> -->
-            </div>
+            <div class="swiper-wrapper" id="products-wrapper"></div>
           </div>
           <div class="pagination">
             <div class="custom-pagination"></div>
@@ -242,14 +218,14 @@
         </div>
       </div>
     </section>
-    <!--=============== Testimonials ===============-->
+
     <section class="section testimonials" id="testimonials">
       <div class="row container">
         <div class="col">
           <div class="card" data-filter="rosele">
             <div class="d-flex">
               <div class="image">
-                <img src="./images/profile-1.jpg" alt="" />
+                <img src="./images/profile-1.jpg" alt="Rosele Desoza profile" />
               </div>
               <div>
                 <h4>Rosele Desoza</h4>
@@ -260,7 +236,7 @@
           <div class="card" data-filter="marvin">
             <div class="d-flex">
               <div class="image">
-                <img src="./images/profile-2.jpg" alt="" />
+                <img src="./images/profile-2.jpg" alt="Marvin McKinney profile" />
               </div>
               <div>
                 <h4>Marvin McKinney</h4>
@@ -271,7 +247,7 @@
           <div class="card" data-filter="guy">
             <div class="d-flex">
               <div class="image">
-                <img src="./images/profile-3.jpg" alt="" />
+                <img src="./images/profile-3.jpg" alt="Guy Hawkins profile" />
               </div>
               <div>
                 <h4>Guy Hawkins</h4>
@@ -282,7 +258,7 @@
           <div class="card" data-filter="kathryn">
             <div class="d-flex">
               <div class="image">
-                <img src="./images/profile-4.jpg" alt="" />
+                <img src="./images/profile-4.jpg" alt="Kathryn Murphy profile" />
               </div>
               <div>
                 <h4>Kathryn Murphy</h4>
@@ -325,13 +301,13 @@
         </div>
       </div>
     </section>
-    <!--=============== App ===============-->
+
     <section class="section app">
       <div class="row container">
         <div class="col">
           <div class="circle">
             <div class="inner-circle"></div>
-            <img src="./images/mobile.png" alt="" />
+            <img src="./images/mobile.png" alt="Mobile phone displaying app" />
           </div>
         </div>
         <div class="col">
@@ -343,18 +319,86 @@
             business hours very effectively.
           </p>
           <div class="d-flex">
-            <img src="./images/app-store.png" alt="" />
-            <img src="./images/google-play.png" alt="" />
+            <img src="./images/app-store.png" alt="Download on App Store" />
+            <img src="./images/google-play.png" alt="Get it on Google Play" />
           </div>
         </div>
       </div>
     </section>
-    <!--=============== Footer ===============-->
-    <footer class="footer" id ="footer">
+
+    <section class="section recipe-recommendation">
+      <div class="container">
+        <h1 class="mt-5 text-center">Recipe Recommendation System</h1>
+        <div class="form-container">
+          <form method="post" class="mt-4">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="calories">Calories</label>
+                <input type="number" class="form-control" id="calories" name="calories" step="any" required />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="fat">Fat</label>
+                <input type="number" class="form-control" id="fat" name="fat" step="any" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="carbohydrates">Carbohydrates</label>
+                <input type="number" class="form-control" id="carbohydrates" name="carbohydrates" step="any" required />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="protein">Protein</label>
+                <input type="number" class="form-control" id="protein" name="protein" step="any" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="cholesterol">Cholesterol</label>
+                <input type="number" class="form-control" id="cholesterol" name="cholesterol" step="any" required />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="sodium">Sodium</label>
+                <input type="number" class="form-control" id="sodium" name="sodium" step="any" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fiber">Fiber</label>
+              <input type="number" class="form-control" id="fiber" name="fiber" step="any" required />
+            </div>
+            <div class="form-group">
+              <label for="ingredients">Ingredients</label>
+              <input type="text" class="form-control" id="ingredients" name="ingredients" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recommendations</button>
+          </form>
+        </div>
+
+        {% if recommendations %}
+        <div class="mt-5">
+          <h2>Recommended Recipes</h2>
+          <div class="row">
+            {% for recipe in recommendations %}
+            <div class="col-md-4">
+              <div class="card recipe-card">
+                <img class="card-img-top recipe-image" src="{{ recipe['image_url'] }}" alt="{{ recipe['recipe_name'] }}" />
+                <div class="card-body">
+                  <h5 class="card-title">{{ recipe['recipe_name'] }}</h5>
+                  <p class="card-text">{{ recipe['ingredients_list'] | truncate(100) }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
       <div class="row container">
         <div class="col">
           <div class="logo d-flex">
-            <img src="./images/logo.png" alt="logo" />
+            <img src="./images/logo.png" alt="FDelivery Logo" />
           </div>
           <p>
             Retail food delivery is a courier service in which a restaurant,
@@ -371,187 +415,50 @@
         <div class="col">
           <div>
             <h4>Company</h4>
-            <a href="">About Us</a>
-            <a href="">Blog</a>
-            <a href="">All Products</a>
-            <a href="">Locations Map</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">All Products</a>
+            <a href="#">Locations Map</a>
           </div>
           <div>
             <h4>Services</h4>
-            <a href="">Order tracking</a>
-            <a href="">Wish List</a>
-            <a href="">My account</a>
-            <a href="">Terms & Conditions</a>
+            <a href="#">Order tracking</a>
+            <a href="#">Wish List</a>
+            <a href="#">My account</a>
+            <a href="#">Terms & Conditions</a>
           </div>
           <div>
             <h4>Support</h4>
-            <a href="">FAQ</a>
-            <a href="">Policy </a>
-            <a href="">Business</a>
-            <a href="">Support Carrer</a>
+            <a href="#">FAQ</a>
+            <a href="#">Policy </a>
+            <a href="#">Business</a>
+            <a href="#">Support Career</a>
           </div>
           <div>
             <h4>Contact</h4>
-            <a href="">WhatsApp</a>
-            <a href="">Support 24 </a>
-            <a href="">Quick Chat</a>
+            <a href="#">WhatsApp</a>
+            <a href="#">Support 24 </a>
+            <a href="#">Quick Chat</a>
           </div>
         </div>
       </div>
     </footer>
     <div class="footer-bottom">
       <div class="row container d-flex">
-        <p>Copyright © 2021 Pixency</p>
+        <p>Copyright &copy; 2021 Pixency</p>
         <p>Created by MANISH AND SAKSHAM</p>
       </div>
     </div>
-    <div class="wrapper" id="calorie-calculator-modal">
-  <form action="" class="form" id="calorie-form">
-    <h2>Calorie Recommendation</h2>
-    <div class="control">
-      <label for="age">Age (years):</label>
-      <input type="number" id="age" required />
-    </div>
-    <div class="control">
-      <label for="gender">Gender:</label>
-      <select id="gender" required>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-      </select>
-    </div>
-    <div class="control">
-      <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight" step="0.1" required />
-    </div>
-    <div class="control">
-      <label for="height">Height (cm):</label>
-      <input type="number" id="height" required />
-    </div>
-    <div class="control">
-      <label for="activity-level">Activity Level:</label>
-      <select id="activity-level" required>
-        <option value="1.2">Sedentary (little or no exercise)</option>
-        <option value="1.375">Lightly Active (light exercise 1-3 days/week)</option>
-        <option value="1.55">Moderately Active (moderate exercise 3-5 days/week)</option>
-        <option value="1.725">Very Active (hard exercise 6-7 days/week)</option>
-        <option value="1.9">Super Active (very hard exercise/physical job & exercise 2x/day)</option>
-      </select>
-    </div>
-    <div class="control">
-      <label for="goal">Goal:</label>
-      <select id="goal" required>
-        <option value="maintenance">Maintain Weight</option>
-        <option value="loss">Weight Loss (0.5kg/week approx)</option>
-        <option value="gain">Weight Gain (0.5kg/week approx)</option>
-      </select>
-    </div>
-    <button type="submit" class="btn">Get Recommendation</button>
-    <div id="calorie-result" style="margin-top: 20px; font-weight: bold;"></div>
-  </form>
-  <div class="close-form" id="close-calorie-modal">
-    <i class="bx bx-x"></i>
-  </div>
-</div>
 
-<a class="btn" id="open-calorie-calculator">Get Calorie Advice</a>
-
-    <!--=============== Swiper JS ===============-->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!--=============== Custom JS ===============-->
     <script src="./js/testimonial.js"></script>
     <script src="./js/products.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/cart.js"></script>
+    <script src="./js/signin-form-validation.js"></script>
   </body>
-</html>
-<script>
-// Form Validation
-document.addEventListener('DOMContentLoaded', function() {
-  const signInForm = document.querySelector('.form');
-  const emailInput = signInForm.querySelector('input[type="email"]');
-  const passwordInput = signInForm.querySelector('input[type="password"]');
-  const closeFormBtn = document.querySelector('.close-form');
-  
-  // Error message elements
-  const emailError = document.createElement('div');
-  emailError.className = 'error-message';
-  emailInput.parentNode.insertBefore(emailError, emailInput.nextSibling);
-  
-  const passwordError = document.createElement('div');
-  passwordError.className = 'error-message';
-  passwordInput.parentNode.insertBefore(passwordError, passwordInput.nextSibling);
-
-  // Validate email format
-  function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  }
-
-  // Form submit handler
-  signInForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    let isValid = true;
-    
-    // Validate email
-    if (!emailInput.value.trim()) {
-      emailError.textContent = 'Email is required';
-      emailInput.classList.add('error');
-      isValid = false;
-    } else if (!validateEmail(emailInput.value.trim())) {
-      emailError.textContent = 'Please enter a valid email';
-      emailInput.classList.add('error');
-      isValid = false;
-    } else {
-      emailError.textContent = '';
-      emailInput.classList.remove('error');
-    }
-    
-    // Validate password
-    if (!passwordInput.value.trim()) {
-      passwordError.textContent = 'Password is required';
-      passwordInput.classList.add('error');
-      isValid = false;
-    } else if (passwordInput.value.length < 6) {
-      passwordError.textContent = 'Password must be at least 6 characters';
-      passwordInput.classList.add('error');
-      isValid = false;
-    } else {
-      passwordError.textContent = '';
-      passwordInput.classList.remove('error');
-    }
-    
-    // If form is valid, submit it
-    if (isValid) {
-      // Here you would typically send the data to your server
-      alert('Form submitted successfully!');
-      signInForm.reset();
-      signInForm.classList.remove('active');
-    }
-  });
-  
-  // Clear errors when typing
-  emailInput.addEventListener('input', function() {
-    emailError.textContent = '';
-    emailInput.classList.remove('error');
-  });
-  
-  passwordInput.addEventListener('input', function() {
-    passwordError.textContent = '';
-    passwordInput.classList.remove('error');
-  });
-  
-  // Close form handler
-  closeFormBtn.addEventListener('click', function() {
-    signInForm.classList.remove('active');
-    // Clear errors when closing form
-    emailError.textContent = '';
-    passwordError.textContent = '';
-    emailInput.classList.remove('error');
-    passwordInput.classList.remove('error');
-  });
-});
-</script>
-</body>
 </html>
