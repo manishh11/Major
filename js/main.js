@@ -1,145 +1,71 @@
 /* ========== Navigation =========== */
-const hamburger = document.querySelector(".hamburger");
-const close = document.querySelector(".nav-list .close");
-const menu = document.querySelector(".nav-list");
-
-hamburger.addEventListener("click", () => {
-  menu.classList.add("show");
-});
-
-close.addEventListener("click", () => {
-  menu.classList.remove("show");
-});
-
-/* ========== SignIn Form =========== */
-const signInBtn = document.querySelector(".signin");
-const signInForm = document.querySelector("header .wrapper");
-
-signInBtn.addEventListener("click", () => {
-  signInForm.classList.add("active");
-});
-
-document.querySelector(".close-form").addEventListener("click", () => {
-  signInForm.classList.remove("active");
-  // Clear form and errors when closing
-  const form = document.querySelector('.form');
-  form.reset();
-  document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-  document.querySelectorAll('input').forEach(input => input.classList.remove('error'));
-});
-// Form Validation
 document.addEventListener('DOMContentLoaded', function() {
-  const signInForm = document.querySelector('.form');
-  const emailInput = signInForm.querySelector('input[type="email"]');
-  const passwordInput = signInForm.querySelector('input[type="password"]');
-  const submitBtn = signInForm.querySelector('button[type="submit"]');
-  const closeFormBtn = document.querySelector('.close-form');
-  
-  // Validate email format
-  function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
+  const hamburger = document.querySelector(".hamburger");
+  const closeNav = document.querySelector(".nav-list .close");
+  const menu = document.querySelector(".nav-list");
+
+  if (hamburger && menu && closeNav) {
+    hamburger.addEventListener("click", () => {
+      menu.classList.add("show");
+    });
+
+    closeNav.addEventListener("click", () => {
+      menu.classList.remove("show");
+    });
   }
 
-  // Validate form fields
-  function validateForm() {
-    let isValid = true;
-    
-    // Validate email
-    const emailControl = emailInput.parentElement;
-    const emailError = emailControl.querySelector('.error-message');
-    
-    if (!emailInput.value.trim()) {
-      emailError.textContent = 'Email is required';
-      emailError.classList.add('show');
-      emailControl.classList.add('error');
-      isValid = false;
-    } else if (!validateEmail(emailInput.value.trim())) {
-      emailError.textContent = 'Please enter a valid email';
-      emailError.classList.add('show');
-      emailControl.classList.add('error');
-      isValid = false;
-    } else {
-      emailError.classList.remove('show');
-      emailControl.classList.remove('error');
-      emailControl.classList.add('success');
-    }
-    
-    // Validate password
-    const passwordControl = passwordInput.parentElement;
-    const passwordError = passwordControl.querySelector('.error-message');
-    
-    if (!passwordInput.value.trim()) {
-      passwordError.textContent = 'Password is required';
-      passwordError.classList.add('show');
-      passwordControl.classList.add('error');
-      isValid = false;
-    } else if (passwordInput.value.length < 6) {
-      passwordError.textContent = 'Password must be at least 6 characters';
-      passwordError.classList.add('show');
-      passwordControl.classList.add('error');
-      isValid = false;
-    } else {
-      passwordError.classList.remove('show');
-      passwordControl.classList.remove('error');
-      passwordControl.classList.add('success');
-    }
-    
-    // Disable button if invalid
-    submitBtn.disabled = !isValid;
-    return isValid;
+  /* ========== SignIn Form Toggle =========== */
+  const signInBtn = document.querySelector(".signin");
+  const signInFormWrapper = document.querySelector("header .wrapper"); // The overlay for the sign-in form
+  const closeFormBtn = document.querySelector(".close-form");
+  const formElement = signInFormWrapper ? signInFormWrapper.querySelector('.form') : null; // The actual form inside the wrapper
+
+  if (signInBtn && signInFormWrapper && closeFormBtn) {
+    signInBtn.addEventListener("click", (e) => {
+      e.preventDefault(); // Prevent default link behavior
+      signInFormWrapper.classList.add("active");
+      // Clear form and errors when opening (ensure signin-form-validation.js handles this too)
+      if (formElement) {
+        formElement.reset();
+        // Assuming error messages are handled by signin-form-validation.js,
+        // but adding a general clear for inputs if needed.
+        document.querySelectorAll('.control input').forEach(input => input.classList.remove('error', 'success'));
+        document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+      }
+    });
+
+    closeFormBtn.addEventListener("click", () => {
+      signInFormWrapper.classList.remove("active");
+      // Clear form and errors when closing
+      if (formElement) {
+        formElement.reset();
+        document.querySelectorAll('.control input').forEach(input => input.classList.remove('error', 'success'));
+        document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+      }
+    });
   }
 
-  // Form submit handler
-  signInForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    if (validateForm()) {
-      // Here you would typically send the data to your server
-      submitBtn.innerHTML = '<i class="bx bx-loader-alt bx-spin"></i> Processing...';
-      
-      // Simulate API call
-      setTimeout(() => {
-        alert('Login successful!');
-        signInForm.reset();
-        signInForm.classList.remove('active');
-        submitBtn.innerHTML = 'Sign In';
-        
-        // Remove success classes
-        document.querySelectorAll('.control').forEach(control => {
-          control.classList.remove('success');
-        });
-      }, 1500);
-    }
-  });
-  
-  // Real-time validation on input
-  emailInput.addEventListener('input', function() {
-    validateForm();
-  });
-  
-  passwordInput.addEventListener('input', function() {
-    validateForm();
-  });
-  
-  // Close form handler
-  closeFormBtn.addEventListener('click', function() {
-    signInForm.classList.remove('active');
-    signInForm.reset();
-    submitBtn.disabled = false;
-    
-    // Clear all errors and states
-    document.querySelectorAll('.error-message').forEach(el => {
-      el.textContent = '';
-      el.classList.remove('show');
+  /* ========== Cart Dropdown Toggle Logic =========== */
+  const cartIcon = document.querySelector('.cart-icon');
+  const cartDropdown = document.querySelector('.cart-dropdown');
+
+  if (cartIcon && cartDropdown) {
+    cartIcon.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent clicks inside from closing immediately
+      cartDropdown.classList.toggle('active');
     });
-    
-    document.querySelectorAll('.control').forEach(control => {
-      control.classList.remove('error', 'success');
+
+    // Close the cart dropdown if a click occurs outside of it
+    document.addEventListener('click', (event) => {
+      // Check if the click is outside the cart dropdown AND outside the cart icon
+      if (!cartDropdown.contains(event.target) && !cartIcon.contains(event.target)) {
+        cartDropdown.classList.remove('active');
+      }
     });
-  });
-  
-  // Initial validation check
-  validateForm();
-  
+
+    // Prevent clicks inside the dropdown from closing it
+    cartDropdown.addEventListener('click', (event) => {
+        event.stopPropagation();
+    });
+  }
 });
